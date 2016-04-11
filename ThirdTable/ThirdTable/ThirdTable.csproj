@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{48DA1452-228C-440D-887D-1065303B1236}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ThirdTable</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>ThirdTable</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignProvision>Automatic:InHouse</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <CodesignKey>iPhone Distribution: GOAVEGA SOFTWARE INDIA PRIVATE LIMITED (V4G28E24VC)</CodesignKey>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\arrow1.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\bg.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-83.5%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Resources\Images.xcassets\Backgrounds.imageset\ThirdCustomCell.xib" />
+    <InterfaceDefinition Include="Resources\Images.xcassets\BackgroundTableCellImage.imageset\FourthCustomCell.xib" />
+    <InterfaceDefinition Include="FifthTableViewCell.xib" />
+    <InterfaceDefinition Include="SixthTableViewCell.xib" />
+    <InterfaceDefinition Include="PediometricsFirstTableCell.xib" />
+    <InterfaceDefinition Include="PediometricsSecondTableCell.xib" />
+    <InterfaceDefinition Include="PediometricDescriptionViewController.xib" />
+    <InterfaceDefinition Include="PediometricImageDescriptionViewController.xib" />
+    <InterfaceDefinition Include="PediometricSpecificDescriptionViewController.xib" />
+    <InterfaceDefinition Include="PediometricSpecificDescriptionVC.xib" />
+    <InterfaceDefinition Include="PediatricsSpecificDescriptionTableViewCell.xib" />
+    <InterfaceDefinition Include="UltrasoundParametersAndTheNonstressTestTableViewCell.xib" />
+    <InterfaceDefinition Include="PediatricsImageCollectionVC.xib" />
+    <InterfaceDefinition Include="PrematurityHtmlViewCntrl.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableViewDataSource.cs" />
+    <Compile Include="ThirdCustomCell.cs" />
+    <Compile Include="ThirdCustomCell.designer.cs">
+      <DependentUpon>ThirdCustomCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FifthTableViewCell.designer.cs">
+      <DependentUpon>FifthTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SixthTableViewCell.cs" />
+    <Compile Include="SixthTableViewCell.designer.cs">
+      <DependentUpon>SixthTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FifthTableViewCell.cs" />
+    <Compile Include="PediometricsFirstTableCell.cs" />
+    <Compile Include="PediometricsFirstTableCell.designer.cs">
+      <DependentUpon>PediometricsFirstTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PediometricsSecondTableCell.cs" />
+    <Compile Include="PediometricsSecondTableCell.designer.cs">
+      <DependentUpon>PediometricsSecondTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PediometricDescriptionViewController.cs" />
+    <Compile Include="PediometricDescriptionViewController.designer.cs">
+      <DependentUpon>PediometricDescriptionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PediometricImageDescriptionViewController.cs" />
+    <Compile Include="PediometricImageDescriptionViewController.designer.cs">
+      <DependentUpon>PediometricImageDescriptionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\UIColorExtensions.cs" />
+    <Compile Include="PediometricSpecificDescriptionViewController.cs" />
+    <Compile Include="PediometricSpecificDescriptionViewController.designer.cs">
+      <DependentUpon>PediometricSpecificDescriptionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PediatricsSpecificTableViewSource.cs" />
+    <Compile Include="PediometricSpecificDescriptionVC.cs" />
+    <Compile Include="PediometricSpecificDescriptionVC.designer.cs">
+      <DependentUpon>PediometricSpecificDescriptionVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PediatricsSpecificDescriptionTableViewCell.cs" />
+    <Compile Include="PediatricsSpecificDescriptionTableViewCell.designer.cs">
+      <DependentUpon>PediatricsSpecificDescriptionTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UltrasoundParametersAndTheNonstressTestTableViewCell.cs" />
+    <Compile Include="UltrasoundParametersAndTheNonstressTestTableViewCell.designer.cs">
+      <DependentUpon>UltrasoundParametersAndTheNonstressTestTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PediatricsImageCollectionVC.cs" />
+    <Compile Include="PediatricsImageCollectionVC.designer.cs">
+      <DependentUpon>PediatricsImageCollectionVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PediatricsImageCollectionViewSource.cs" />
+    <Compile Include="PrematurityHtmlViewCntrl.cs" />
+    <Compile Include="PrematurityHtmlViewCntrl.designer.cs">
+      <DependentUpon>PrematurityHtmlViewCntrl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Images.xcassets\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Backgrounds.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Backgrounds.imageset\bg-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\Backgrounds.imageset\bg-2.png" />
+    <BundleResource Include="Resources\Images.xcassets\Backgrounds.imageset\bg.png" />
+    <BundleResource Include="Resources\Images.xcassets\bg.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\bg.imageset\bg-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\bg.imageset\bg-2.png" />
+    <BundleResource Include="Resources\Images.xcassets\bg.imageset\bg.png" />
+    <BundleResource Include="Resources\Images.xcassets\BackgroundTableCellImage.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\BackgroundTableCellImage.imageset\bg-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\BackgroundTableCellImage.imageset\bg-2.png" />
+    <BundleResource Include="Resources\Images.xcassets\BackgroundTableCellImage.imageset\bg.png" />
+    <BundleResource Include="Resources\Images.xcassets\Abnormal-Placental-Adherence300.imageset\Abnormal-Placental-Adherence300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Abnormal-Placental-Adherence300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Abnormal-Placental-Adherence400.imageset\Abnormal-Placental-Adherence400.png" />
+    <BundleResource Include="Resources\Images.xcassets\Abnormal-Placental-Adherence400.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Adaptive-Maternal-Changes-During-Pregnancy-300.imageset\Adaptive-Maternal-Changes-During-Pregnancy-300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Adaptive-Maternal-Changes-During-Pregnancy-300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Adaptive-Maternal-Changes-During-Pregnancy-400.imageset\Adaptive-Maternal-Changes-During-Pregnancy-400.png" />
+    <BundleResource Include="Resources\Images.xcassets\Adaptive-Maternal-Changes-During-Pregnancy-400.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Biophysical-Profile300.imageset\Biophysical-Profile300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Biophysical-Profile300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Biophysical-Profile400.imageset\Biophysical-Profile400.png" />
+    <BundleResource Include="Resources\Images.xcassets\Biophysical-Profile400.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Chorionic-Villus-Sampling300.imageset\Chorionic-Villus-Sampling300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Chorionic-Villus-Sampling300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Chorionic-Villus-Sampling400.imageset\Chorionic-Villus-Sampling400.png" />
+    <BundleResource Include="Resources\Images.xcassets\Chorionic-Villus-Sampling400.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placenta-Previa300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placenta-Previa300.imageset\Placenta-Previa300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Placenta-Previa400.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placenta-Previa400.imageset\Placenta-Previa400.png" />
+    <BundleResource Include="Resources\Images.xcassets\Vasa-Previa300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Vasa-Previa300.imageset\Vasa-Previa300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Vasa-Previa400.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Vasa-Previa400.imageset\Vasa-Previa400.png" />
+    <BundleResource Include="Resources\Images.xcassets\footer.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\footer.imageset\footer-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\footer.imageset\footer-2.png" />
+    <BundleResource Include="Resources\Images.xcassets\footer.imageset\footer.png" />
+    <BundleResource Include="Resources\Images.xcassets\bg-ios.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\bg-ios.imageset\bg-ios.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40%402x-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-40%403x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%403x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon%402x.png" />
+    <BundleResource Include="Resources\Images.xcassets\Bdp.imageset\Bdp.png" />
+    <BundleResource Include="Resources\Images.xcassets\Bdp.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\BdpSmall.imageset\BdpSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\BdpSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Bronchogenic-cyst.imageset\Bronchogenic-cyst.png" />
+    <BundleResource Include="Resources\Images.xcassets\Bronchogenic-cyst.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Bronchogenic-cystSmall.imageset\Bronchogenic-cystSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Bronchogenic-cystSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum-lat-view-copy.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum-lat-view-copy.imageset\Pneumomediastinum-lat-view-copy.png" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum-lat-view-copySmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum-lat-view-copySmall.imageset\Pneumomediastinum-lat-view-copySmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum.imageset\Pneumomediastinum.png" />
+    <BundleResource Include="Resources\Images.xcassets\PneumomediastinumSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\PneumomediastinumSmall.imageset\PneumomediastinumSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumopericardium Small.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumopericardium Small.imageset\Pneumopericardium Small.png" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumopericardium.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumopericardium.imageset\Pneumopericardium.png" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumothorax.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumothorax.imageset\Pneumothorax.png" />
+    <BundleResource Include="Resources\Images.xcassets\PneumothoraxSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\PneumothoraxSmall.imageset\PneumothoraxSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\RDS.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\RDS.imageset\RDS.png" />
+    <BundleResource Include="Resources\Images.xcassets\RDSSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\RDSSmall.imageset\RDSSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Scimitar-syndrome.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Scimitar-syndrome.imageset\Scimitar-syndrome.png" />
+    <BundleResource Include="Resources\Images.xcassets\Scimitar-syndromeSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Scimitar-syndromeSmall.imageset\Scimitar-syndromeSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration---intralobar.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration---intralobar.imageset\Sequestration---intralobar.png" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration---intralobarSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration---intralobarSmall.imageset\Sequestration---intralobarSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration--extralobar.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration--extralobar.imageset\Sequestration--extralobar.png" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration--extralobarSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration--extralobarSmall.imageset\Sequestration--extralobarSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Thorax.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Thorax.imageset\Thorax.png" />
+    <BundleResource Include="Resources\Images.xcassets\ThoraxSmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\ThoraxSmall.imageset\ThoraxSmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\severe-BPD-with-PH-copy.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\severe-BPD-with-PH-copy.imageset\severe-BPD-with-PH-copy.png" />
+    <BundleResource Include="Resources\Images.xcassets\severe-BPD-with-PH-copySmall.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\severe-BPD-with-PH-copySmall.imageset\severe-BPD-with-PH-copySmall.png" />
+    <BundleResource Include="Resources\Images.xcassets\Placental-Abruption-Premature-300px-by-300px.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placental-Abruption-Premature-300px-by-300px.imageset\Placental-Abruption-Premature-300px-by-300px.png" />
+    <BundleResource Include="Resources\Images.xcassets\Placental-Abruption-Premature-400px-by-400px.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placental-Abruption-Premature-400px-by-400px.imageset\Placental-Abruption-Premature-400px-by-400px.png" />
+    <BundleResource Include="Resources\Images.xcassets\Type1CPAM300by300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Type1CPAM300by300.imageset\Type1CPAM300by300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Type1CPAM400by400.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Type1CPAM400by400.imageset\Type1CPAM400by400.png" />
+    <BundleResource Include="Resources\Images.xcassets\Atlas-2.-Pregnancy-changesHRI..imageset\Atlas-2.-Pregnancy-changesHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Atlas-2.-Pregnancy-changesHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\BPP-copyHRI..imageset\BPP-copyHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\BPP-copyHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\BpdHRI..imageset\BpdHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\BpdHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Bronchogenic-cystHRI..imageset\Bronchogenic-cystHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Bronchogenic-cystHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\CPAM-alternateHRI..imageset\CPAM-alternateHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\CPAM-alternateHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Chorionic-villus-samplingHRI..imageset\Chorionic-villus-samplingHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Chorionic-villus-samplingHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placenta-previaHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placenta-previaHRI..imageset\Placenta-previaHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Placental-adherenceHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Placental-adherenceHRI..imageset\Placental-adherenceHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum-lat-view-copyHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Pneumomediastinum-lat-view-copyHRI..imageset\Pneumomediastinum-lat-view-copyHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\PneumomediastinumHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\PneumomediastinumHRI..imageset\PneumomediastinumHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\PneumopericardiumHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\PneumopericardiumHRI..imageset\PneumopericardiumHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\PneumothoraxHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\PneumothoraxHRI..imageset\PneumothoraxHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\RDSHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\RDSHRI..imageset\RDSHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Scimitar-syndromeHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Scimitar-syndromeHRI..imageset\Scimitar-syndromeHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration---intralobarHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration---intralobarHRI..imageset\Sequestration---intralobarHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration--extralobarHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Sequestration--extralobarHRI..imageset\Sequestration--extralobarHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\ThoraxHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\ThoraxHRI..imageset\ThoraxHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Vasa-previaHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Vasa-previaHRI..imageset\Vasa-previaHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\abruptionHRI.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\abruptionHRI.imageset\abruptionHRI.png" />
+    <BundleResource Include="Resources\Images.xcassets\severe-BPD-with-PH-copyHRI..imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\severe-BPD-with-PH-copyHRI..imageset\severe-BPD-with-PH-copyHRI..png" />
+    <BundleResource Include="Resources\Images.xcassets\Atlas-1.-Prematurity---early-and-late-complications300by300.imageset\Atlas-1.-Prematurity---early-and-late-complications300by300.png" />
+    <BundleResource Include="Resources\Images.xcassets\Atlas-1.-Prematurity---early-and-late-complications300by300.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\Atlas-1.-Prematurity---early-and-late-complicationsby750by540.imageset\Atlas-1.-Prematurity---early-and-late-complicationsby750by540.png" />
+    <BundleResource Include="Resources\Images.xcassets\Atlas-1.-Prematurity---early-and-late-complicationsby750by540.imageset\Contents.json" />
+    <BundleResource Include="Resources\prematurity.html" />
+    <BundleResource Include="Resources\Images.xcassets\luanchericon.imageset\Contents.json" />
+    <BundleResource Include="Resources\Images.xcassets\luanchericon.imageset\luanchericon.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%402x-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%403x-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-2.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%402x-1.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%402x-2.png" />
+    <BundleResource Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%403x-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+</Project>
